@@ -42,7 +42,7 @@ $app->post('/sigfox', function (Request $request) use ($app) {
   
   
   $response = new Response(json_encode($output), 200);
-  $response->headers->set('Content-Type', 'application/jon');
+  $response->headers->set('Content-Type', 'application/json');
   return $response;
 });
 
